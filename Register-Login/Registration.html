@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Registration</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+<body>
+
+<form id="form" action="Registration.php" method ="POST">	
+
+			<div class="registerbox">
+					<h2>Registration Form</h2>
+					<p>First Name</p>
+					<input type="text" name="fn" placeholder="First Name" required>
+					<p>Last Name</p>
+					<input type="text" name="ln" placeholder="Last Name" required>
+					<p>Email</p>
+					<input type="email" name="email" placeholder="email.ue.edu.ph" required>
+					<p>Student Number</p>
+					<input type="text" name="stnm" placeholder="Student Number" maxlength="11" required>
+					<p>Mobile Number</p>
+					<input type="text" name="mbnm" placeholder="Mobile Number" maxlength="11" required>
+					<p>Year Level</p>
+					<input type="number" name="yl" placeholder="Year Level" min="1" max="5" required>
+					<p>Birthdate</p>
+					<input type="date" name="birth" placeholder="birthdate" max="2002-01-01" required>
+				
+			
+			</div>
+					<div class="loginbox">
+					<h2>Login Credentials</h2>
+					<p>Username</p>
+					<input type="text" name="username" placeholder="Username" minlength="8" maxlength="15" required>
+					<p>Password</p>
+					<input type="password" name="psw" placeholder="Password" minlength="8" maxlength="20" required>
+					<p>Confirm Password</p>
+					<input type="password" name="rpsw" placeholder="Confirm Password" minlength="8" maxlength="20" required>
+					<p> Terms and Conditions </p><br>
+					<input type="checkbox" name "toc" required>
+					<label for="toc"> Checking Terms and Condition will allow us to store your registration
+					credentials </label><br>
+					<input type="submit" name="sub2" value="Register">
+				
+			</div>
+	
+</form>
+   
+
+</body>
+</head>
+</html>
